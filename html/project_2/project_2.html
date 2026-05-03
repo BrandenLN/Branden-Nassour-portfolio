@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <div class="header">
+        <div class="title">PORTFOLIOS</div>
+      </div>
+
+      <div class="grid" id="grid"></div>
+    </div>
+
+    <div class="lightbox" id="lightbox" onclick="closeBox()">
+      <div class="lightbox-inner" onclick="event.stopPropagation()">
+        <div class="close" onclick="closeBox()">✕</div>
+        <div id="lightboxContent"></div>
+      </div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
