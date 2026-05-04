@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Widget Dashboard</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Dashboard</h1>
+      <button onclick="toggleTheme()">Toggle Theme</button>
+    </nav>
+
+    <div class="controls">
+      <button onclick="showWidget('clocks')">Clocks</button>
+      <button onclick="showWidget('local')">Local Weather</button>
+      <button onclick="showWidget('calculator')">Calculator</button>
+      <button onclick="showWidget('stopwatch')">Stopwatch</button>
+      <button onclick="showWidget('notes')">Memo Pad</button>
+    </div>
+
+    <div class="container">
+      <div id="clocks" class="widget">
+        <h2>World Clocks</h2>
+        <div id="clockContainer"></div>
+      </div>
+
+      <div id="local" class="widget">
+        <h2>Local Info</h2>
+        <p id="localTime"></p>
+        <p id="temperature"></p>
+        <p id="weather"></p>
+      </div>
+
+      <div id="calculator" class="widget">
+        <h2>Calculator</h2>
+        <input type="text" id="calcDisplay" readonly />
+        <div class="calc-buttons"></div>
+      </div>
+
+      <div id="stopwatch" class="widget">
+        <h2>Stopwatch</h2>
+        <p id="stopwatchDisplay">00:00:00</p>
+        <button onclick="startStopwatch()">Start</button>
+        <button onclick="stopStopwatch()">Stop</button>
+        <button onclick="resetStopwatch()">Reset</button>
+      </div>
+
+      <div id="notes" class="widget">
+        <h2>Memo Pad</h2>
+        <textarea id="memo"></textarea>
+      </div>
+    </div>
+
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>

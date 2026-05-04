@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="../styles/style_contact.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Branden Nassour</h1>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./resume/resume.html">Resume</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="form-container">
+      <h2>Contact Form</h2>
+
+      <form id="contactForm">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" required />
+
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" />
+
+        <label for="summary">Summary</label>
+        <textarea id="summary" name="summary"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="../scripts/contact.js"></script>
+  </body>
+</html>

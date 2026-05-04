@@ -1,0 +1,61 @@
+:root {
+  --bg: #111;
+  --text: #fff;
+  --card: #222;
+}
+
+.light {
+  --bg: #f4f4f4;
+  --text: #111;
+  --card: #fff;
+}
+
+body {
+  font-family: monospace;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s;
+}
+
+nav {
+  background: var(--card);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background: #444;
+  color: white;
+  cursor: pointer;
+}
+
+.container {
+  text-align: center;
+}
+
+.widget {
+  display: none;
+  padding: 20px;
+}
+
+#clockContainer div {
+  font-size: 1.5em;
+  margin: 10px;
+  letter-spacing: 2px;
+}
+
+textarea {
+  width: 80%;
+  height: 200px;
+}
